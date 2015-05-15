@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<!--script src="https://code.jquery.com/jquery-2.1.4.js"></script-->
+		<script>
+
+		function $ (word) {
+			r={
+				currentWord: word+" ",
+				add: function(word) { this.currentWord+=(word+" ");   return this; },
+		    	yell: function() { alert(this.currentWord);}
+			}
+			return r;
+		}
+
+		$('hello').add('Jenny').add('how').add('are').add('you!').yell();
+		</script>
+	</head>
+	<body>
+		<div id="myDiv">here is some text in a div</div>
+	</body>
+</html>
